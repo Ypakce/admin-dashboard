@@ -132,4 +132,63 @@ ul li {
 .main-content {
     grid-column: 2 / span 5;
     grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgba(226,232,240,255);
+    padding: 20px;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.announcements-header, .trending-header {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+
+.announcements-body, .trending-body {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+}
+
+.announcements-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+}
+
+.announcements-description {
+    font-size: 0.8rem;
+    color: rgb(88, 88, 88);
+}
+
+.announcements hr {
+    margin: 15px 0px;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding-top: 20px;
+}
+
+
+.trending-body .trend {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.trending-body .trend-profile-icon {
+    height: 50px;
+    padding-right: 10px;
+}
+
+.trending .trend-name {
+    color: rgb(88, 88, 88);
 }
